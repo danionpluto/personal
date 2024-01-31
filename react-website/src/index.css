@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(195, 191, 236);
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  justify-content: center;
+  align-items: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 30px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 60px;
+  
+  font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
+}
+nav {
+  background: #7c7ac8;
+  height: 85px;
+  display: flex;
+  justify-content:right;
+  padding: 0.2rem calc((100vw - 1000px) / 2);
+  z-index: 12;
+}
+
+
+.link-styles {
+  color: #110404;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    &.active {
+        color: #4d4dff;
+    }
+  
+}
+
+.home {
+  display: flex;
+  justify-content: center;
+  
+}
+
+.pics {
+  margin: 20px;
+  
+}
+
+.home-text {
+  
+  display: flexbox;
+  justify-content: center;
+  text-decoration: none;
+  
+}
+
+.home-title {
+  margin: 50px;
+  
+  
+}
+
+.blurb{
+  margin: 50px;
+  align-items: center;
+  font-size: smaller;
+  font-family: Georgia, Times, "Times New Roman", serif, light;
+  font-weight: lighter;
+}
+
+
+
