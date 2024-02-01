@@ -11,7 +11,7 @@ function Navbar () {
   return (
     <nav>
       <Link className = {"link-styles"} to="/">Home</Link>
-      <Link className = {"link-styles"} to="/about">About</Link>
+      <Link className = {"link-styles"} to="/about">Projects</Link>
       <Link className = {"link-styles"} to="/signup">Contact</Link>
       
     </nav>

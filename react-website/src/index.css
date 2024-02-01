@@ -2,7 +2,8 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(195, 191, 236);
+  
+  background: #fff4e1;
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   
   justify-content: center;
@@ -21,21 +22,21 @@ h1 {
   justify-content: center;
   align-items: center;
   font-size: 60px;
-  
+  color: #84cbcb; 
   font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
 }
 nav {
-  background: #7c7ac8;
   height: 85px;
   display: flex;
   justify-content:right;
-  padding: 0.2rem calc((100vw - 1000px) / 2);
+  padding: 0.2rem calc((100vw - 1000px) / 19);
   z-index: 12;
+  background: #e67a7a;
 }
 
 
 .link-styles {
-  color: #110404;
+  color:  #fff4e1;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -45,6 +46,7 @@ nav {
     &.active {
         color: #4d4dff;
     }
+    
   
 }
 
@@ -55,7 +57,7 @@ nav {
 }
 
 .pics {
-  margin: 20px;
+  margin: 30px;
   
 }
 
@@ -71,6 +73,19 @@ nav {
   margin: 50px;
   
   
+  
+}
+
+.proj-title {
+  margin: 50px;
+  
+  align-items: center;
+  font-size: 40px;
+  font-family: Georgia, Times, "Times New Roman", serif, light;
+  font-weight: lighter;
+  width: fit-content;
+  color: #e67a7a; 
+  flex-basis: 100%
 }
 
 .blurb{
@@ -81,5 +96,39 @@ nav {
   font-weight: lighter;
 }
 
+.blurb-proj{
+  margin: 50px;
+  
+  align-items: center;
+  font-size: medium;
+  font-family: Georgia, Times, "Times New Roman", serif, light;
+  font-weight: lighter;
+  width: fit-content;
+  
+  flex-basis: 100%
+}
+
+.projects {
+  display: flex;
+  padding-inline: 0.2rem calc((100vw - 1000px) / 19);
+  
+}
+
+.link-button {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: large;
+  font-weight: bold;
+  padding: 50px;
+  color: #f1f1f6;
+  background-color: #9898c7;
+  width: 300px;
+  height:auto;
+  flex-basis: 100%;
+  margin: 50px;
+  background-image: url("indigcomp.png");
+  background-position:bottom;
+  
+  
+}
 
 
