@@ -3,13 +3,33 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   
-  background: #fff4e1;
+ 
+  background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/back.jpg");
+  
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  
+
+ 
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   
   justify-content: center;
   align-items: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
+}
+
+.home-txt{
+  margin: 50px;
+  align-items: center;
+  align-self: center;
+  font-size: smaller;
+  font-family: Georgia, Times, "Times New Roman", serif, light;
+  width: 40rem;
+  font-weight: lighter;
+
 }
 
 code {
@@ -22,21 +42,24 @@ h1 {
   justify-content: center;
   align-items: center;
   font-size: 60px;
-  color: #84cbcb; 
+  color: #101616; 
   font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
+  font-family: "EB Garamond", serif;
+  font-weight: lighter;
 }
 nav {
-  height: 85px;
   display: flex;
   justify-content:right;
   padding: 0.2rem calc((100vw - 1000px) / 19);
   z-index: 12;
-  background: #e67a7a;
+  background:local;
+  padding-top: 3rem;
+  
 }
 
 
 .link-styles {
-  color:  #fff4e1;
+  color:  #070706;
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -50,6 +73,14 @@ nav {
   
 }
 
+.abt{
+  margin-top: 5rem;
+  display: flex;
+  align-content: center;
+  
+
+}
+
 .home {
   display: flex;
   justify-content: center;
@@ -58,20 +89,36 @@ nav {
 
 .pics {
   margin: 30px;
+ 
   
 }
 
 .home-text {
   
-  display: flexbox;
+  display:flexbox;
+  flex-direction: column;
+  justify-content: center;
+  text-decoration: none;
+  position: fixed;
+  top: 50%;
+  transform: translate(0, -50%);
+  
+  text-align : center;
+  
+  
+}
+
+.abt-text{
+  display:flexbox;
   justify-content: center;
   text-decoration: none;
   
+  
+
 }
 
 .home-title {
   margin: 50px;
-  
   
   
 }
@@ -119,15 +166,16 @@ nav {
   font-size: large;
   font-weight: bold;
   padding: 50px;
-  color: #f1f1f6;
+  color: #0a0a0d;
   background-color: #9898c7;
   width: 300px;
   height:auto;
   flex-basis: 100%;
   margin: 50px;
-  background-image: url("indigcomp.png");
+  background: local;
   background-position:bottom;
-  
+  border-radius: 5rem;
+  border-color: rgb(238, 110, 13);
   
 }
 
