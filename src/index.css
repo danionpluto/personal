@@ -4,12 +4,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   
  
-  background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/back.jpg");
   
-  background-size:cover;
-  background-repeat: no-repeat;
-  height: 100vh;
-  width: 100vw;
   
 
  
@@ -52,9 +47,25 @@ nav {
   justify-content:right;
   padding: 0.2rem calc((100vw - 1000px) / 19);
   z-index: 12;
-  background:local;
+  background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/background.png");
+  
+  background-size:cover;
+  
   padding-top: 3rem;
   
+}
+.aboutpage{
+  background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/backgr2.png");
+  background-size:cover;
+  background-position: fixed;
+}
+.proj{
+  background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/backgr2.png");
+  
+  background-repeat: no-repeat;
+  background-size:cover;
+  padding-top: 1rem;
+
 }
 
 
@@ -74,11 +85,19 @@ nav {
 }
 
 .abt{
-  margin-top: 5rem;
+  
   display: flex;
   align-content: center;
   
 
+}
+.homepage{
+  background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/background.png");
+  
+  background-size:cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
 }
 
 .home {

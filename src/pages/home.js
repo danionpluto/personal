@@ -8,7 +8,7 @@ import Typewriter from "typewriter-effect";
 const Home = () => {
     return (
 
-        <div className="homepage" style={{ backgroundImage: `url(${back})` }}>
+        <div className="homepage" >
             <div className="home">
             
             <div className="home-text">
