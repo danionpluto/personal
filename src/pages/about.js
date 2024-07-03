@@ -7,11 +7,15 @@ const About = () => {
     return (
         <div className="aboutpage">
             <div className="abt">
+            
             <img className = {"pics"} src={nyc} alt="Me image" height={500} width={400}/>
+           
             <div className="abt-text">
+            <h1 className = "aboutTitle">Hi I'm Dani!</h1>
+            
 
       
-                <h3 className="blurb">Hi! I'm a software developer and student at Cornell University interested in 
+                <h3 className="blurb">I'm a software developer and student at Cornell University interested in 
                 Computational Lingustics, NLP, and how technology can be developed by 
                 and for the communities whose data is used to develop it. My main research focus is on ML and how 
                 it can be adapted for low resource languages.</h3>
