@@ -551,6 +551,8 @@ h4{
   width: 90%;
   justify-content: center;
   justify-content: space-between;
+  /* border-style: groove; */
+  position: sticky;
   /* border-style: dashed; */
   
   
@@ -568,7 +570,7 @@ h4{
   font-size: smaller;
   font-family: Georgia, Times, "Times New Roman", serif, light;
   font-weight: lighter;
-  /* border-style: groove; */
+  
   border-radius: 30px;
   max-height: 350px;
   overflow: auto;
@@ -578,7 +580,7 @@ h4{
   min-width: 200px;
   max-width: 400px;
   width:400px;
-  margin-right: 13%;
+  margin-right: 18%;
   margin-left: 10px;
   
   
@@ -601,7 +603,7 @@ h4{
 }
 .proj_pics2{
   border-radius: 30px;
-  margin-left: 23%;
+  margin-left: 16%;
 
 }
 
@@ -655,8 +657,8 @@ h4{
 }
 
 .triangle-button {
-  position: fixed;              /* Fixes it to the viewport */
-  top: 65%;                     /* Vertically center */
+  position: sticky;              /* Fixes it to the viewport */
+  top: 80%;                     /* Vertically center */
   right: 70px;                  /* Distance from right edge */
   transform: translateY(-50%);  /* Perfect vertical centering */
 
