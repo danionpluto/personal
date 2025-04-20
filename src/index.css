@@ -14,6 +14,10 @@ body {
   background-color: #524956;
   background-color: #21182e;
   background-color: #f8efef;
+
+  min-width: 1500px;   /* Set your minimum width */
+  min-height: 600px;  /* Optional: set minimum height */
+  overflow-x: auto;
 }
 
 .home-txt{
@@ -198,6 +202,7 @@ h4{
         color: #4d4dff;
     }
     margin-right: 54.4%;
+    margin-right: 48.4%;
     
   
 }
@@ -328,7 +333,7 @@ h4{
   justify-content: center;
   text-decoration: none;
   top: 50%;
-  transform: translate(0, 300%);
+  transform: translate(0, 250%);
   text-align : center;
   
   
@@ -577,11 +582,11 @@ h4{
   
   color: #fff8f8;
   color:#061d25;
-  min-width: 200px;
-  max-width: 400px;
-  width:400px;
-  margin-right: 18%;
+  /* min-width: 200px;
+  max-width: 400px; */
+  width:30%;
   margin-left: 10px;
+  
   
   
   
@@ -603,7 +608,7 @@ h4{
 }
 .proj_pics2{
   border-radius: 30px;
-  margin-left: 16%;
+  margin-left: 12%;
 
 }
 
@@ -633,6 +638,7 @@ h4{
   background-color: #f5a623;
   background-color: #c4d8a7;
   clip-path: polygon(0% 0%, 60% 50%, 0% 100%);
+  transform: translateY(30%);
   width: 160px;
   height: 140px;
   border: none;
@@ -659,12 +665,14 @@ h4{
 .triangle-button {
   position: sticky;              /* Fixes it to the viewport */
   top: 80%;                     /* Vertically center */
-  right: 70px;                  /* Distance from right edge */
-  transform: translateY(-50%);  /* Perfect vertical centering */
+  right: 70px;      
+  
+  transform: translateY(-10%);  /* Perfect vertical centering */
+  transform: translateX(70%);
 
   background-color: #b38b6d;
   clip-path: polygon(0% 0%, 60% 50%, 0% 100%);
-  width: 160px;
+  width: 100px;
   height: 140px;
   border: none;
   cursor: pointer;
