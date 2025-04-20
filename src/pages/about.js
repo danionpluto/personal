@@ -3,8 +3,10 @@
 import React from "react";
 import beach from "/Users/danielaramos/Documents/GitHub/personal1/src/pics/me_beach.jpg";
 import nyc from "/Users/danielaramos/Documents/GitHub/personal1/src/pics/nyc.jpg"
+import Navbar from '/Users/danielaramos/Documents/GitHub/personal1/src/App.js'
 const About = () => {
     return (
+        
         <div className="aboutpage">
             <div className="abt">
             
@@ -46,7 +48,7 @@ const About = () => {
                 I love teaching and I had the opportunity to be a facillitator for CHEM 2090: General Chemistry 
                 for Engineers and CS 3110: Data Structures and Functional Programming. </h3>
 
-                <h3 className="blurb"> I am also a software engineer for the Cornell University Sustainable 
+                <h3 className="blurb"> I am also a development lead for the Cornell University Sustainable 
                 Design Project Team,'s subteam Alternative Recycling Cornell where we develop Swapp, an IOS app where Cornell 
                 students can buy and sell their used items to promote less waste on campus.</h3>
 

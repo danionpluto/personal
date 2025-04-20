@@ -2,10 +2,6 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  
- 
-  
-  
 
  
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -14,6 +10,10 @@ body {
   align-items: center;
   font-family: "Times New Roman", Times, serif;
   font-size: 30px;
+  /* background-color: #fff8f8; */
+  background-color: #524956;
+  background-color: #21182e;
+  background-color: #f8efef;
 }
 
 .home-txt{
@@ -32,26 +32,35 @@ code {
     monospace;
 }
 
+
 h1 {
   display: flex;
-  justify-content: center;
+  
+  justify-content: left;
+  margin-left: 30px;
   align-items: center;
   font-size: 60px;
-  color: #101616; 
+  color: #f5f9f9; 
   font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
   font-family: "EB Garamond", serif;
+  font-family: 'Roboto';
   font-weight: lighter;
+  height: 0px;
 }
 nav {
   display: flex;
   justify-content:right;
   padding: 0.2rem calc((100vw - 1000px) / 19);
   z-index: 12;
-  background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/background.png");
+  
   
   background-size:cover;
   
   padding-top: 3rem;
+  /* background-color: #fff8f8; */
+  background-color: #524956;
+  background-color: #21182e;
+  background-color: #f8efef;
   
 }
 .aboutpage{
@@ -59,14 +68,105 @@ nav {
   background-size:cover;
   background-position: 50%;
 }
-.projpage{
-  background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/backgr2.png");
-  
-  background-repeat: no-repeat;
-  background-size:cover;
+
+.speakpage{
   padding-top: 1rem;
   
+}
+.contactpage{
+  background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/backgr2.png");
+  background-size:cover;
   background-position: 50%;
+
+}
+
+
+.projpage{
+
+  padding-top: 1rem;
+  background-color: #fff8f8;
+  background-color: #524956;
+  background-color: #21182e;
+  background-color: #f8efef;
+  
+  background-position: 50%;
+  
+}
+
+
+
+.nav-btn {
+  background-color: transparent;
+  /* border: 2px solid #333; */
+  color: #121212;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 5px;
+  transition: all 0.3s ease;
+  font-weight: normal;
+  text-transform: uppercase;
+  height: 35px;
+  border-radius: 0px;
+  border-style: none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Style for the active button (when selected) */
+.nav-btn.active {
+  font-weight: bold;
+  color: #333;
+  background-color:  transparent;
+}
+
+/* Optional: Style for when hovering over buttons */
+.nav-btn:hover {
+  background-color: rgba(51, 51, 51, 0.1);
+}
+
+.subnav{
+  display: flex;
+  flex-direction: row;
+  margin-left: 2%;
+  height: fit-content;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  background-color: #c4d8a7;
+  /* background-color: #ccdfe6;
+  background-color: #fffaf8;
+  background-color: #ff67b2;
+  background-color: #9e1b32;
+  background-color: #ffb3d9; */
+
+  width: 90%;
+  border-style: solid;
+  border-radius: 30rem;
+  border: 1rem;
+}
+
+.subnav2{
+  display: flex;
+  flex-direction: row;
+  margin-left: 2%;
+  height: fit-content;
+  margin-top: 80px;
+  margin-bottom: 0px;
+  background-color: #977057;
+  /* background-color: #977057;
+  background-color: #ccdfe6;
+  background-color: #b38b6d;; */
+
+  width: 90%;
+  border-style: solid;
+  border-radius: 30rem;
+  border: 1rem;
+}
+
+h4{
+  font-weight: lighter;
+  font-size: 30px;
+  margin-right: 30px;
+  height: 0px;
 }
   
 
@@ -84,9 +184,28 @@ nav {
 
 }
 
+.link-styles2 {
+  color:  #070706;
+  /* color:#f5f9f9; */
+  
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    height: 100%;
+    cursor: pointer;
+    &.active {
+        color: #4d4dff;
+    }
+    margin-right: 54.4%;
+    
+  
+}
+
+
 
 .link-styles {
   color:  #070706;
+  /* color: #f5f9f9; */
     display: flex;
     align-items: center;
     text-decoration: none;
@@ -100,6 +219,29 @@ nav {
   
 }
 
+.contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.form{
+  
+  border-style: solid;
+  border-radius: 1cm;
+  width: 50%;
+  align-items: center;
+}
+
+.social-media{
+  margin: 1cm;
+  font-weight: lighter;
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  width: 50%;
+}
+
 .abt{
   
   display: flex;
@@ -108,8 +250,9 @@ nav {
 
 }
 .homepage{
-  background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/background.png");
-  
+  background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/background_land.png");
+  background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/back_dark.png");
+  background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/Back_pink.png");
   background-size:cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -134,10 +277,8 @@ nav {
   flex-direction: column;
   justify-content: center;
   text-decoration: none;
-  position: fixed;
   top: 50%;
-  transform: translate(0, -50%);
-  
+  transform: translate(0, 300%);
   text-align : center;
   
   
@@ -151,29 +292,41 @@ nav {
   
 
 }
+.proj{
+  background-size: contain;
+  background-repeat: no-repeat;
+  /* background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/proj_back2.png"); */
+  
+  
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* height: 900px; */
+  margin-top: 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* horizontal */
+  align-items: center;     /* vertical */
+  
+  
+  
+
+  
+}
 
 .home-title {
-  margin: 50px;
-  
-  
+  margin: 50px; 
 }
 
 .subproj{
   --s: 10px; /* control the size */
-  padding: var(--s);
-  background: conic-gradient(from 90deg at 1px 1px,#0000 25%,#000 0);
-
-  border: calc(2*var(--s)) solid #0000;
-  outline: 1px solid #000;
-  outline-offset: calc(-1*var(--s));
-
-  width: 800px;
-  height: 500px;
-  margin: 1rem;
+  width: 100%;
+  height: 80%px;
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  position:relative;
+  flex-direction: row;
+  margin-top: 200px;
+  align-items: center;
+  border-style: solid;
+  
   
   
   
@@ -196,29 +349,46 @@ nav {
 }
 
 .blurb{
-  margin: 50px;
+  
   align-items: center;
   font-size: smaller;
   font-family: Georgia, Times, "Times New Roman", serif, light;
   font-weight: lighter;
+  
+  
+  
+  
+
+  
 }
 
 .blurb-proj{
-  margin: 50px;
+  margin: 30px;
   
-  align-items: center;
-  font-size: medium;
+  
   font-family: Georgia, Times, "Times New Roman", serif, light;
   font-weight: lighter;
-  width: fit-content;
+  font-size: 15px;
+  width:800px;
   
-  flex-basis: 100%
+  
+}
+
+.proj_pics{
+  margin-right: 50px;
+
 }
 
 .projects {
+  
+  background-size:auto;
+  background-repeat: no-repeat;
+
   display: flex;
   align-items: center;
   justify-content: center;
+  
+
   
   
 }
@@ -301,3 +471,138 @@ nav {
 .button-55:focus {
   box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
 }
+
+.podium{
+  padding-top: 1rem;
+  background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/podium_brown.png");
+  /* background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/speech_dark.png"); */
+  background-size:contain;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  
+  justify-items: center;
+  height: 800px;
+  
+  border-style: ridge;
+  
+}
+
+.presentation{
+
+  display: flex;
+  flex-direction: row;
+  margin-top: 7%;
+  /* border-style: dashed; */
+  width: 60%;
+  justify-content: center;
+  justify-content: space-between;
+ 
+  
+  
+  /* font-size: 20px;
+  border-style: dashed;
+  width: 20%;
+  align-self: center;
+  justify-items: center;
+  font-style: italic;  */
+}
+
+.blurb2{
+  background-color: #fff8f8;
+  background-color: #524956;
+  background-color: #21182e;
+  background-color: #f8efef;
+  font-size: smaller;
+  font-family: Georgia, Times, "Times New Roman", serif, light;
+  font-weight: lighter;
+  /* border-style: groove; */
+  border-radius: 30px;
+  max-height: 350px;
+  overflow: auto;
+  
+  color: #fff8f8;
+  color:#061d25;
+  min-width: 200px;
+  max-width: 400px;
+  
+  
+}
+
+.blurb-proj2{
+  margin: 30px;
+  
+  font-family: Georgia, Times, "Times New Roman", serif, light;
+  font-weight: lighter;
+  font-size: 15px;
+  
+  
+  /* border-style: groove; */
+  
+  
+}
+.proj_pics2{
+  border-radius: 30px;
+
+}
+
+
+.speaking_links{
+  
+  color: #977057;
+  text-decoration: none;
+  font-size: 2rem;
+  justify-self: center;
+  margin-left: 20%;
+  
+}
+.speaking_links:hover{
+  color: #E7C6B4;
+  text-decoration: none;
+  
+}
+
+.triangle-clip {
+  background-color: #b1d496;
+  background-color: #ffb3d9;
+  background-color: #f2f2f2;
+  background-color: #b38b6d;
+  background-color: #f5a623;
+  background-color: #c4d8a7;
+  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+  width: 100px;
+  height: 80px;
+  border: none;
+  color: #061d25;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 60px;
+  margin-bottom: 100px;
+  transition: background-color 0.3s;
+}
+
+.triangle-clip:hover {
+  background-color: #799366;
+  background-color:#f69fcb;
+  background-color: #c4d8a7;
+  
+}
+
+.triangle-button {
+  background-color: #f8efef;
+  margin-top: 10%;
+  margin-right: 150px;
+  margin-left: 10px;
+  clip-path: polygon(0% 0%, 40% 50%, 0% 100%);
+  width: 60px;    /* make it shorter horizontally */
+  height: 40px;   /* adjust for proportion */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  padding: 0;
+}
+
+.triangle-button:hover {
+  background-color: #1d6fa5;
+}
+
+
