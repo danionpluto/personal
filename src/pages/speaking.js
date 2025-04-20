@@ -7,7 +7,7 @@ import neurips from "/Users/danielaramos/Documents/GitHub/personal1/src/pics/neu
 import aiisp from "/Users/danielaramos/Documents/GitHub/personal1/src/pics/indigenouscomputingconference_01_04282023.jpg";
 
 import apizaco from "/Users/danielaramos/Documents/GitHub/personal1/src/pics/46a2b6be-1a6e-41d2-aeba-66ad7a315cb5.JPG";
-
+import { motion, AnimatePresence } from "framer-motion";
  
 
 const Speaking = () => {
@@ -84,8 +84,8 @@ const Speaking = () => {
 </div>
 
 <div className="podium">
-        <div className="presentation">
-        <img className="proj_pics2" src={projectData[selectedProject].image} alt="Project image" height={300} />
+    <div className="presentation">
+        {/* <img className="proj_pics2" src={projectData[selectedProject].image} alt="Project image" height={300} />
       
             <div className="blurb2">
            
@@ -96,22 +96,47 @@ const Speaking = () => {
                 {projectData[selectedProject].blurb}
              </div>
             
-        </div>
-        <button className="triangle-button" onClick={handleNextProject} >
+            </div>
+          <button className="triangle-button" onClick={handleNextProject} >
         
-          </button>
+          </button> */}
+          <AnimatePresence mode="wait">
+  <motion.div
+    key={selectedProject}
+    initial={{ opacity: 0, y: 30 }}
+    animate={{ opacity: 1, y: 0 }}
+    exit={{ opacity: 0, y: -30 }}
+    transition={{ duration: 0.5 }}
+    className="presentation"
+  >
+    <img
+      className="proj_pics2"
+      src={projectData[selectedProject].image}
+      alt="Project image"
+      height={300}
+      style = {{borderStyle:"solid", borderColor:"#fff8f8"}}
+    />
+
+    <div className="blurb2">
+      <div className="blurb-proj2">
+        <a className="speaking_links" href={projectData[selectedProject].link}>
+          {projectData[selectedProject].title}
+        </a>
+        <br />
+        <br />
+        {projectData[selectedProject].blurb}
+      </div>
+    </div>
+
+    
+  </motion.div>
+</AnimatePresence>
+<button className="triangle-button" onClick={handleNextProject}></button>
       
       </div>
-      {/* <h1>{projectData[selectedProject].title}</h1> */}
-      
-          
-          {/* <div className="podium">
 
-          </div> */}
-
-
-        </div>
-        </div> 
+    </div>
+</div> 
         
     );
 };
