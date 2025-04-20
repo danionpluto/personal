@@ -1,70 +1,15 @@
-// import React, {Component} from "react";
-//  import Link from "react-router-dom";
-//  import censored_books from "/Users/danielaramos/Documents/GitHub/personal1/src/pics/censored_books.png"
-
-// const Projects = () => {
-//     return (
-//         <div className="projpage">
-//             <h1>Projects</h1>
-            
-//             <div className = "subnav">
-            
-//               <h4>
-//               Censored Books
-//               </h4>
-//               <h4>
-//               Social Dynamis
-//               </h4>
-//               <h4>
-//               FLAIR
-//               </h4>
-//               <h4>
-//               Swapp
-//               </h4>
-//             </div>
-        
-//         <div className="proj">
-
-//             <div className='projects'>
-
-//               <div className = 'subproj'>
-//               <img className = {"proj_pics"} src={censored_books} alt="CB image" height={300}/>
-
-
-//               <div className='blurb'>
-//               <div className = 'blurb-proj'>
-//               Using Boolean search, Cosine similarity, and SVD, we created an information retrieval system to combat the growing censorship about various topics, many of which affect marginalized communities to a greater degree. Many of those who are affected by the censorship tend to be students who are eager to  access books through public libraries that will educate them about the world around them, as well as give them access to communities that can provide life saving support systems. When searching up discourse ridden queries, it is helpful to know which books have been restricted or taken off shelves in order to amplify them and preserve the knowledge and stories that lie within their covers. At the same time, we want to make the history of where and when books about race, LGBTQ+ rights, and feminism have been banned accessible through an information retrieval system.
-//               </div>
-//               </div>
-              
-//               </div>
-
-            
-    
-            
-//             </div>
-
-            
-//         </div>
-//         </div>
-        
-//     );
-// };
- 
-// export default Projects;
-
-
 import React, { useState } from "react";
 import censored_books from "/Users/danielaramos/Documents/GitHub/personal1/src/pics/censored_books.png";
 import social_dynamis from "/Users/danielaramos/Documents/GitHub/personal1/src/pics/confirmation_bias.jpg";
 import flair from "/Users/danielaramos/Documents/GitHub/personal1/src/pics/FLAIR.JPG";
 import swapp from "/Users/danielaramos/Documents/GitHub/personal1/src/pics/swapp-fyp.png";
 import butt from "/Users/danielaramos/Documents/GitHub/personal1/src/pics/green_arrow.png";
+
+
+
 const Projects = () => {
-  // State to keep track of the selected project
   const [selectedProject, setSelectedProject] = useState("censoredBooks");
 
-  // Define the blurb text and image based on the selected project
   const projectData = {
     censoredBooks: {
       image: censored_books,
@@ -76,7 +21,7 @@ const Projects = () => {
     },
     flair: {
       image: flair,
-      blurb: "FLAIR is an innovative application that enhances user experiences by providing real-time fashion recommendations. By leveraging machine learning algorithms, it offers personalized suggestions based on the user’s style preferences, trends, and clothing history."
+      blurb: "I spent the summer of 2024 working alongside a brilliant and innovative team of Computer Scientists, mathematicians, and linguists to reimagine approaches to Automatic Speech recognition for Indigenous Languages of the Pacific Northwest. We spent the summer searching through existing literature and participating in code reviews to think of new ways to tackle the small amount of data available for endangered languages."
     },
     swapp: {
       image: swapp,
@@ -84,9 +29,14 @@ const Projects = () => {
     }
   };
 
-  // Handle project selection when a button is clicked
   const handleProjectSelect = (project) => {
     setSelectedProject(project);
+  };
+  const handleNextProject = () => {
+    const keys = Object.keys(projectData);
+    const currentIndex = keys.indexOf(selectedProject);
+    const nextIndex = (currentIndex + 1) % keys.length; 
+    setSelectedProject(keys[nextIndex]);
   };
 
   return (
@@ -130,13 +80,13 @@ const Projects = () => {
               </div>
             </div>
           </div>
+          <button className="triangle-clip" onClick={handleNextProject}>
+      
+          </button>
           
         </div>
-        <button className="triangle-clip" >
-        click
-          </button>
-        
-        
+      
+          
       </div>
     </div>
   );

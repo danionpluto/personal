@@ -47,6 +47,10 @@ h1 {
   font-weight: lighter;
   height: 0px;
 }
+
+h3{
+  margin-top: 100px;
+}
 nav {
   display: flex;
   justify-content:right;
@@ -64,9 +68,9 @@ nav {
   
 }
 .aboutpage{
-  background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/backgr2.png");
-  background-size:cover;
-  background-position: 50%;
+  /* background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/backgr2.png"); */
+  background-color: #f8efef;
+  
 }
 
 .speakpage{
@@ -74,9 +78,7 @@ nav {
   
 }
 .contactpage{
-  background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/backgr2.png");
-  background-size:cover;
-  background-position: 50%;
+  
 
 }
 
@@ -186,7 +188,6 @@ h4{
 
 .link-styles2 {
   color:  #070706;
-  /* color:#f5f9f9; */
   
     display: flex;
     align-items: center;
@@ -223,15 +224,24 @@ h4{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 100px;
+  color: black;
+}
 
+.contact-title{
+  color:black
 }
 
 .form{
+  margin-top: 100px;
   
-  border-style: solid;
+  /* border-style: solid; */
   border-radius: 1cm;
-  width: 50%;
+  width: 70%;
   align-items: center;
+  color: black;
+  /* border-color: #7f26a5; */
+  background-color: #ed98d2;
 }
 
 .social-media{
@@ -239,16 +249,55 @@ h4{
   font-weight: lighter;
   font-family: "Times New Roman", Times, serif;
   font-style: normal;
-  width: 50%;
+
+  border-radius: 30px;
+  display: flex;
+  flex-direction: row;
+  
+}
+
+.sm{
+  margin-left: 10px;
+  margin-top: 40px;
+  text-decoration: none;
+  color: #0a0a0d;
+  font-size: 40px;
+}
+.sm:hover{
+  font-weight: bold;
 }
 
 .abt{
   
   display: flex;
+  flex-direction: row;
   align-content: center;
+  margin-top: 100px;
+  /* border-style: dotted; */
   
 
 }
+
+.abt-text{
+  width: 60%;
+  /* max-height: 400px; */
+  overflow: scroll;
+  /* margin-left: 300px; */
+  margin-right: 80px;
+  background-color: #f4e3a5; 
+  margin-top: 30px;
+  border-radius: 30px;
+
+}
+
+.blurb-abt{
+  
+  margin: 30px;
+  font-family: Georgia, Times, "Times New Roman", serif, light;
+  font-weight: lighter;
+  /* border-style: groove; */
+}
+
 .homepage{
   background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/background_land.png");
   background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/back_dark.png");
@@ -267,6 +316,7 @@ h4{
 
 .pics {
   margin: 30px;
+  border-radius: 30px;
  
   
 }
@@ -306,6 +356,7 @@ h4{
   flex-direction: column;
   justify-content: center; /* horizontal */
   align-items: center;     /* vertical */
+  /* border-style: groove; */
   
   
   
@@ -322,10 +373,12 @@ h4{
   width: 100%;
   height: 80%px;
   display: flex;
-  flex-direction: row;
-  margin-top: 200px;
+  flex-direction: column;
+  margin-top: 100px;
   align-items: center;
-  border-style: solid;
+  /* border-style: solid; */
+  background-color:#c4d8a7;
+  border-radius: 30px;
   
   
   
@@ -376,6 +429,7 @@ h4{
 
 .proj_pics{
   margin-right: 50px;
+  margin-top: 50px;
 
 }
 
@@ -488,15 +542,16 @@ h4{
 }
 
 .presentation{
+  position: fixed; 
 
   display: flex;
   flex-direction: row;
   margin-top: 7%;
   /* border-style: dashed; */
-  width: 60%;
+  width: 90%;
   justify-content: center;
   justify-content: space-between;
- 
+  /* border-style: dashed; */
   
   
   /* font-size: 20px;
@@ -508,9 +563,7 @@ h4{
 }
 
 .blurb2{
-  background-color: #fff8f8;
-  background-color: #524956;
-  background-color: #21182e;
+  
   background-color: #f8efef;
   font-size: smaller;
   font-family: Georgia, Times, "Times New Roman", serif, light;
@@ -524,6 +577,11 @@ h4{
   color:#061d25;
   min-width: 200px;
   max-width: 400px;
+  width:400px;
+  margin-right: 13%;
+  margin-left: 10px;
+  
+  
   
   
 }
@@ -536,12 +594,14 @@ h4{
   font-size: 15px;
   
   
+  
   /* border-style: groove; */
   
   
 }
 .proj_pics2{
   border-radius: 30px;
+  margin-left: 23%;
 
 }
 
@@ -552,7 +612,8 @@ h4{
   text-decoration: none;
   font-size: 2rem;
   justify-self: center;
-  margin-left: 20%;
+  /* border-style: groove; */
+  margin-bottom: 100px;
   
 }
 .speaking_links:hover{
@@ -562,47 +623,55 @@ h4{
 }
 
 .triangle-clip {
+  
   background-color: #b1d496;
   background-color: #ffb3d9;
   background-color: #f2f2f2;
   background-color: #b38b6d;
   background-color: #f5a623;
   background-color: #c4d8a7;
-  clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
-  width: 100px;
-  height: 80px;
+  clip-path: polygon(0% 0%, 60% 50%, 0% 100%);
+  width: 160px;
+  height: 140px;
   border: none;
   color: #061d25;
   font-weight: bold;
   cursor: pointer;
   margin-top: 60px;
   margin-bottom: 100px;
+  margin-left: 100px;
   transition: background-color 0.3s;
+  
+  
+  
 }
 
 .triangle-clip:hover {
   background-color: #799366;
   background-color:#f69fcb;
   background-color: #c4d8a7;
+  background-color: #799366;
   
 }
 
 .triangle-button {
-  background-color: #f8efef;
-  margin-top: 10%;
-  margin-right: 150px;
-  margin-left: 10px;
-  clip-path: polygon(0% 0%, 40% 50%, 0% 100%);
-  width: 60px;    /* make it shorter horizontally */
-  height: 40px;   /* adjust for proportion */
+  position: fixed;              /* Fixes it to the viewport */
+  top: 65%;                     /* Vertically center */
+  right: 70px;                  /* Distance from right edge */
+  transform: translateY(-50%);  /* Perfect vertical centering */
+
+  background-color: #b38b6d;
+  clip-path: polygon(0% 0%, 60% 50%, 0% 100%);
+  width: 160px;
+  height: 140px;
   border: none;
   cursor: pointer;
   transition: background-color 0.3s;
   padding: 0;
+  z-index: 1000;                /* Make sure it's above other elements */
 }
 
 .triangle-button:hover {
-  background-color: #1d6fa5;
+  background-color: #d1baba;
 }
-
 

@@ -5,16 +5,20 @@ const SignUp = () => {
         <div className = "contactpage">
             <div className = "contact">
 
-            <h1>Get in Touch</h1>
+
             <div className = "form">
                 <div className = "social-media"> 
-                <h2>LinkedIn</h2>
-
+                <h2>LinkedIn: </h2>
+                <a className = "sm" href="linkedin.com/in/daniela-ramos-ojeda-909438221">linkedin.com/in/daniela-ramos-ojeda-909438221</a>
                 </div>
                 <div className = "social-media"> 
-                <h2>Email</h2>
-                <h3>dr497@cornell.edu</h3>
+                <h2>Email: </h2>
+                <a className = "sm">dr497@cornell.edu</a>
+                </div>
 
+                <div className = "social-media"> 
+                <h2>Github: </h2>
+                <a className = "sm" href="https://github.com/danionpluto">https://github.com/danionpluto</a>
                 </div>
             
 

@@ -1,20 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.b62e8895.css",
-    "main.js": "/static/js/main.85897b29.js",
+    "main.css": "/static/css/main.69731fa4.css",
+    "main.js": "/static/js/main.6bfddddc.js",
     "static/js/787.3dcc80ee.chunk.js": "/static/js/787.3dcc80ee.chunk.js",
     "static/media/nyc.jpg": "/static/media/nyc.8c05fa7df55c389fda45.jpg",
     "static/media/headshot.JPG": "/static/media/headshot.6f76d80aa5e9ddcf9e04.JPG",
     "static/media/censored_books.png": "/static/media/censored_books.6890efe061c0922c38f4.png",
     "static/media/me_beach.jpg": "/static/media/me_beach.268e104f7cc081611611.jpg",
     "static/media/neurips.png": "/static/media/neurips.18bd9206ad3790cb7bc1.png",
+    "static/media/ind.jpg": "/static/media/ind.9d06a08e1ef8b8dfb5b6.jpg",
     "static/media/rising.jpg": "/static/media/rising.b3a95a5a2203524043a5.jpg",
     "static/media/back_dark.png": "/static/media/back_dark.d90dbd434819f13a3c8a.png",
     "static/media/background_land.png": "/static/media/background_land.65e00d7114bf92377f8e.png",
     "static/media/Back_pink.png": "/static/media/Back_pink.aa866440068f894a5686.png",
     "static/media/swapp-fyp.png": "/static/media/swapp-fyp.523e26dcafef9157f866.png",
     "static/media/FLAIR.JPG": "/static/media/FLAIR.9d7dfb67e99cde39170f.JPG",
-    "static/media/backgr2.png": "/static/media/backgr2.39dbff2a53729eaa7076.png",
+    "static/media/46a2b6be-1a6e-41d2-aeba-66ad7a315cb5.JPG": "/static/media/46a2b6be-1a6e-41d2-aeba-66ad7a315cb5.b572f69fdf4442369e8b.JPG",
     "static/media/green_arrow.png": "/static/media/green_arrow.7d414803babb04db215b.png",
     "static/media/indigenouscomputingconference_01_04282023.jpg": "/static/media/indigenouscomputingconference_01_04282023.09f87411b62a6477636c.jpg",
     "static/media/confirmation_bias.jpg": "/static/media/confirmation_bias.25a068cf567192db9d64.jpg",
@@ -22,12 +23,12 @@
     "static/media/podium_brown.png": "/static/media/podium_brown.db3d485856bc01800cdf.png",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.b62e8895.css.map": "/static/css/main.b62e8895.css.map",
-    "main.85897b29.js.map": "/static/js/main.85897b29.js.map",
+    "main.69731fa4.css.map": "/static/css/main.69731fa4.css.map",
+    "main.6bfddddc.js.map": "/static/js/main.6bfddddc.js.map",
     "787.3dcc80ee.chunk.js.map": "/static/js/787.3dcc80ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.b62e8895.css",
-    "static/js/main.85897b29.js"
+    "static/css/main.69731fa4.css",
+    "static/js/main.6bfddddc.js"
   ]
 }
