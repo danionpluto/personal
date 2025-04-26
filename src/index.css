@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -5,6 +10,7 @@ body {
 
  
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: 'Merriweather', serif;
   
   justify-content: center;
   align-items: center;
@@ -14,6 +20,7 @@ body {
   background-color: #524956;
   background-color: #21182e;
   background-color: #f8efef;
+  background-color: #F7F4EA;
 
   min-width: 1500px;   /* Set your minimum width */
   min-height: 600px;  /* Optional: set minimum height */
@@ -25,7 +32,7 @@ body {
   align-items: center;
   align-self: center;
   font-size: smaller;
-  font-family: Georgia, Times, "Times New Roman", serif, light;
+  font-size: 'Inter', sans-serif;
   width: 40rem;
   font-weight: lighter;
 
@@ -34,6 +41,7 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+    font-family: 'Merriweather', serif;
 }
 
 
@@ -48,12 +56,15 @@ h1 {
   font-family: "Bodoni MT", Didot, "Didot LT STD", "Book Antiqua", Garamond, "Times New Roman", serif;
   font-family: "EB Garamond", serif;
   font-family: 'Roboto';
+  font-family: 'Inter', sans-serif;;
   font-weight: lighter;
   height: 0px;
 }
 
 h3{
   margin-top: 100px;
+  font-family: 'Inter', sans-serif;
+
 }
 nav {
   display: flex;
@@ -69,11 +80,12 @@ nav {
   background-color: #524956;
   background-color: #21182e;
   background-color: #f8efef;
+  background-color: #F7F4EA;
   
 }
 .aboutpage{
   /* background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/backgr2.png"); */
-  background-color: #f8efef;
+  background-color: F7F4EA;
   
 }
 
@@ -94,6 +106,7 @@ nav {
   background-color: #524956;
   background-color: #21182e;
   background-color: #f8efef;
+  background-color: #F7F4EA;
   
   background-position: 50%;
   
@@ -116,12 +129,15 @@ nav {
   border-radius: 0px;
   border-style: none;
   font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Inter', sans-serif;
+  font-weight: 30px;
 }
 
 /* Style for the active button (when selected) */
 .nav-btn.active {
-  font-weight: bold;
+  font-weight: 200px;
   color: #333;
+  color: #F7F4EA;
   background-color:  transparent;
 }
 
@@ -138,19 +154,18 @@ nav {
   margin-top: 80px;
   margin-bottom: 0px;
   background-color: #c4d8a7;
-  /* background-color: #ccdfe6;
-  background-color: #fffaf8;
-  background-color: #ff67b2;
-  background-color: #9e1b32;
-  background-color: #ffb3d9; */
+  background-color: #80A1D4;
+  
 
   width: 90%;
   border-style: solid;
   border-radius: 30rem;
   border: 1rem;
+  font-family: 'Inter', sans-serif;
 }
 
 .subnav2{
+  
   display: flex;
   flex-direction: row;
   margin-left: 2%;
@@ -173,6 +188,8 @@ h4{
   font-size: 30px;
   margin-right: 30px;
   height: 0px;
+  
+  
 }
   
 
@@ -186,6 +203,7 @@ h4{
   text-align: center;
   align-self: center;
   vertical-align: middle;
+  
   
 
 }
@@ -211,6 +229,7 @@ h4{
 
 .link-styles {
   color:  #070706;
+  font-family: 'Poppins', sans-serif;
   /* color: #f5f9f9; */
     display: flex;
     align-items: center;
@@ -224,6 +243,7 @@ h4{
     
   
 }
+
 
 .contact{
   display: flex;
@@ -287,12 +307,13 @@ h4{
 .abt-text{
   width: 60%;
   /* max-height: 400px; */
-  overflow: scroll;
+  /* overflow: scroll; */
   /* margin-left: 300px; */
   margin-right: 80px;
   background-color: #f4e3a5; 
   margin-top: 30px;
   border-radius: 30px;
+  height: fit-content;
 
 }
 
@@ -300,7 +321,9 @@ h4{
   
   margin: 30px;
   font-family: Georgia, Times, "Times New Roman", serif, light;
+  font-family: 'Poppins', sans-serif;
   font-weight: lighter;
+  font-size: 20px;
   /* border-style: groove; */
 }
 
@@ -308,6 +331,7 @@ h4{
   background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/background_land.png");
   background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/back_dark.png");
   background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/Back_pink.png");
+  background-image: url('/Users/danielaramos/Documents/GitHub/personal1/src/pics/back_final.png');
   background-size:cover;
   background-repeat: no-repeat;
   height: 100vh;
@@ -334,9 +358,9 @@ h4{
   justify-content: center;
   text-decoration: none;
   top: 50%;
-  transform: translate(0, 250%);
+  transform: translate(0, 290%);
   text-align : center;
-  
+  justify-items: center;
   
 }
 
@@ -362,7 +386,7 @@ h4{
   flex-direction: column;
   justify-content: center; /* horizontal */
   align-items: center;     /* vertical */
-  /* border-style: groove; */
+  
   
   
   
@@ -380,12 +404,12 @@ h4{
   height: 80%px;
   display: flex;
   flex-direction: column;
-  margin-top: 100px;
+  margin-top: 10px;
   align-items: center;
-  background-color:#c4d8a7;
+  /* background-color:#c4d8a7; */
   border-radius: 30px;
   margin-bottom: 50px;
-  width:fit-content;
+  min-width: fit-content;
   margin-left: 30px;
 
   
@@ -399,8 +423,8 @@ h4{
 .proj-title {
   align-self: center;
   align-items: center;
-  font-size: 50px;
-  font-family: Georgia, Times, "Times New Roman", serif, light;
+  font-size: 100px;
+  font-family: 'Inter', sans-serif;
   
   font-weight: 200;
   
@@ -413,22 +437,26 @@ h4{
   align-items: center;
   font-size: smaller;
   font-family: Georgia, Times, "Times New Roman", serif, light;
+  font-family: 'Poppins', sans-serif;
+  
   font-weight: lighter;
-  width: 40%;
+  width: 50%;
   height: 400px;
-  overflow: scroll;
   margin-bottom: 20px;
+
   background-color: #f6f5f3;
+  background-color: #F7F4EA;
   border-radius: 30px;
   
   
 }
 
 .blurb-proj{
-  margin: 30px;
-  overflow: scroll;
+  margin: 10px;
   
   font-family: Georgia, Times, "Times New Roman", serif, light;
+  font-family: 'Poppins', sans-serif;
+  
   font-weight: lighter;
   font-size: 15px;
   
@@ -439,7 +467,7 @@ h4{
 
 .proj_pics{
   margin-top: 50px;
-  margin-bottom: 80px;
+  margin-bottom: 50px;
   margin-left: calc(0.4 * 180px);
   border-style: solid;
   border-color: #f6f5f3;
@@ -449,26 +477,31 @@ h4{
 }
 
 .projects {
-  
-  background-size:auto;
-  background-repeat: no-repeat;
-
   display: flex;
   align-items: center;
   justify-content: center; 
+  
 }
 
 .project_links{
   
   color: #c4d8a7;
+  color:#80A1D4;
+  color: black;
   text-decoration: none;
-  font-size: 2rem;
+  font-size: 3rem;
   justify-self: center;
   /* border-style: groove; */
   margin-bottom: 100px;
   margin-bottom: 20px;
+  font-size: 70px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  font-size: 'Inter', sans-serif;
   
 }
+
 
 .link-button {
   font-family: Georgia, 'Times New Roman', Times, serif;
@@ -591,6 +624,7 @@ h4{
   background-color: #f8efef;
   font-size: smaller;
   font-family: Georgia, Times, "Times New Roman", serif, light;
+  
   font-weight: lighter;
   
   border-radius: 30px;
@@ -615,6 +649,7 @@ h4{
   margin: 30px;
   
   font-family: Georgia, Times, "Times New Roman", serif, light;
+  font-family: 'Poppins', sans-serif;
   font-weight: lighter;
   font-size: 15px;
   
@@ -654,25 +689,19 @@ h4{
 }
 
 .triangle-clip {
+  clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+
   
-  background-color: #b1d496;
-  background-color: #ffb3d9;
-  background-color: #f2f2f2;
-  background-color: #b38b6d;
-  background-color: #f5a623;
-  background-color: #c4d8a7;
-  clip-path: polygon(0% 0%, 60% 50%, 0% 100%);
-  transform: translateY(30%);
-  width: 160px;
-  height: 140px;
+  width: 120px;
+  height: 60px;
   border: none;
   color: #061d25;
   font-weight: bold;
   cursor: pointer;
-  margin-top: 60px;
-  margin-bottom: 100px;
   margin-left: 100px;
   transition: background-color 0.3s;
+  background-color: #80A1D4;
+  margin-bottom: 20px;
   
   
   
@@ -683,6 +712,8 @@ h4{
   background-color:#f69fcb;
   background-color: #c4d8a7;
   background-color: #799366;
+  background-color: #4170b7;
+  
   
 }
 
@@ -708,5 +739,19 @@ h4{
 .triangle-button:hover {
   background-color: #d1baba;
 }
+
+
+.timeline-dot:hover {
+  transform: scale(1.8);
+}
+
+
+.speaking2title{
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+}
+
+
+
 
 

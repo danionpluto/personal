@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.4af3a22e.css",
-    "main.js": "/static/js/main.b3bc0198.js",
+    "main.css": "/static/css/main.3de71a4e.css",
+    "main.js": "/static/js/main.3038e3f5.js",
     "static/js/787.3dcc80ee.chunk.js": "/static/js/787.3dcc80ee.chunk.js",
     "static/media/nyc.jpg": "/static/media/nyc.8c05fa7df55c389fda45.jpg",
     "static/media/headshot.JPG": "/static/media/headshot.6f76d80aa5e9ddcf9e04.JPG",
@@ -13,6 +13,7 @@
     "static/media/back_dark.png": "/static/media/back_dark.d90dbd434819f13a3c8a.png",
     "static/media/background_land.png": "/static/media/background_land.65e00d7114bf92377f8e.png",
     "static/media/Back_pink.png": "/static/media/Back_pink.aa866440068f894a5686.png",
+    "static/media/back_final.png": "/static/media/back_final.3e6f3d2b66ff498f05d4.png",
     "static/media/swapp-fyp.png": "/static/media/swapp-fyp.523e26dcafef9157f866.png",
     "static/media/FLAIR.JPG": "/static/media/FLAIR.9d7dfb67e99cde39170f.JPG",
     "static/media/46a2b6be-1a6e-41d2-aeba-66ad7a315cb5.JPG": "/static/media/46a2b6be-1a6e-41d2-aeba-66ad7a315cb5.b572f69fdf4442369e8b.JPG",
@@ -23,12 +24,12 @@
     "static/media/podium_brown.png": "/static/media/podium_brown.db3d485856bc01800cdf.png",
     "static/media/logo.svg": "/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
     "index.html": "/index.html",
-    "main.4af3a22e.css.map": "/static/css/main.4af3a22e.css.map",
-    "main.b3bc0198.js.map": "/static/js/main.b3bc0198.js.map",
+    "main.3de71a4e.css.map": "/static/css/main.3de71a4e.css.map",
+    "main.3038e3f5.js.map": "/static/js/main.3038e3f5.js.map",
     "787.3dcc80ee.chunk.js.map": "/static/js/787.3dcc80ee.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4af3a22e.css",
-    "static/js/main.b3bc0198.js"
+    "static/css/main.3de71a4e.css",
+    "static/js/main.3038e3f5.js"
   ]
 }

@@ -12,7 +12,8 @@ import SignUp from './pages/signup';
 function Navbar () {
   return (
     <nav >
-      <Link className = {"link-styles2"} to="/">Dani Ramos Ojeda</Link>
+      {/* <Link className = {"link-styles2"} to="/">Dani Ramos Ojeda</Link> */}
+      <Link className = {"link-styles"} to="/">Home</Link>
       <Link className = {"link-styles"} to="/projects">Projects</Link>
       <Link className = {"link-styles"} to="/speaking">Speaking</Link>
       <Link className = {"link-styles"} to="/about">About</Link>
