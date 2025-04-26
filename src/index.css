@@ -82,6 +82,7 @@ nav {
   background-color: #f8efef;
   background-color: #F7F4EA;
   
+  
 }
 .aboutpage{
   /* background-image: url("/Users/danielaramos/Documents/GitHub/personal1/src/pics/backgr2.png"); */
@@ -230,6 +231,7 @@ h4{
 .link-styles {
   color:  #070706;
   font-family: 'Poppins', sans-serif;
+  font-size: 20px;
   /* color: #f5f9f9; */
     display: flex;
     align-items: center;
@@ -240,8 +242,10 @@ h4{
     &.active {
         color: #4d4dff;
     }
-    
-  
+}
+.link-styles.active {
+  color: #4d4dff;
+  font-weight: bold;
 }
 
 
@@ -438,12 +442,10 @@ h4{
   font-size: smaller;
   font-family: Georgia, Times, "Times New Roman", serif, light;
   font-family: 'Poppins', sans-serif;
-  
   font-weight: lighter;
   width: 50%;
-  height: 400px;
+  height: 520px;
   margin-bottom: 20px;
-
   background-color: #f6f5f3;
   background-color: #F7F4EA;
   border-radius: 30px;
@@ -453,22 +455,17 @@ h4{
 
 .blurb-proj{
   margin: 10px;
-  
   font-family: Georgia, Times, "Times New Roman", serif, light;
   font-family: 'Poppins', sans-serif;
-  
   font-weight: lighter;
   font-size: 15px;
-  
-
-  
   
 }
 
 .proj_pics{
   margin-top: 50px;
   margin-bottom: 50px;
-  margin-left: calc(0.4 * 180px);
+  margin-left: calc(0.1 * 180px);
   border-style: solid;
   border-color: #f6f5f3;
   border-radius: 30px;
@@ -494,7 +491,7 @@ h4{
   /* border-style: groove; */
   margin-bottom: 100px;
   margin-bottom: 20px;
-  font-size: 70px;
+  font-size: 60px;
   margin-bottom: 20px;
   border-bottom: 1px solid black;
   padding-bottom: 10px;
@@ -689,19 +686,20 @@ h4{
 }
 
 .triangle-clip {
-  clip-path: polygon(50% 100%, 0% 0%, 100% 0%);
+  clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
 
   
-  width: 120px;
+  width: 40px;
   height: 60px;
   border: none;
   color: #061d25;
   font-weight: bold;
   cursor: pointer;
-  margin-left: 100px;
   transition: background-color 0.3s;
   background-color: #80A1D4;
   margin-bottom: 20px;
+  margin-top: 30px;
+  margin-left: 40px;
   
   
   

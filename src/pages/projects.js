@@ -113,6 +113,9 @@ const Projects = () => {
             >
               {projectData[selectedProject].title}
             </a>
+            <button className="triangle-clip" onClick={handleNextProject}>
+      
+          </button>
 
             <div className="tag-container" style={{ marginTop: '15px', display: 'flex', flexWrap: 'wrap', gap: '8px' }}>
   {projectData[selectedProject].tags.map((tag, index) => (
@@ -155,11 +158,7 @@ const Projects = () => {
         
           
         </div>
-        <button className="triangle-clip" onClick={handleNextProject}>
-      
-          </button>
-      
-          
+         
       </div>
     </div>
   );
