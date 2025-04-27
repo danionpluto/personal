@@ -237,21 +237,13 @@ const Speaking = () => {
         <motion.div
         
           id="div1"
-          style={{
-            padding: '50px',
-            height: '400px',
-            borderRadius: '8px',
-            display: "flex",
-            flexDirection: "row",
-            alignItems: 'center',
-            marginBottom: '50px',
-          }}
+          
           initial={{ opacity: 0, y: 30 }} // Start off-screen and hidden
           animate={{ opacity: 1, y: 0 }} // Animate to normal position and visible
           exit={{ opacity: 0, y: -30 }} // Exit with a fade and slide up
           transition={{ duration: 0.8 }} // Duration of the transition
         >
-          <div style={{ padding: '50px', fontSize: '16px', width: '600px' }}>
+          <div className="sp" style={{ padding: '50px', fontSize: '16px', width: '600px' }}>
             <h2
               className="speaking2title"
               style={{
@@ -266,7 +258,7 @@ const Speaking = () => {
             <p>
               <strong>{selected.date}</strong>
             </p>
-            <p style={{fontFamily:'Poppins, sans-serif'}}>{selected.blurb}</p>
+            <p className='sp_blurb 'style={{fontFamily:'Poppins, sans-serif'}}>{selected.blurb}</p>
             <button
               onClick={() => window.open(selected.link, "_blank")}
               style={{
@@ -279,6 +271,7 @@ const Speaking = () => {
                 cursor: 'pointer',
                 textDecoration: 'none', // Remove underline if any
                 transition: 'background-color 0.3s, color 0.3s', // Smooth hover effect
+
               }}
               onMouseEnter={(e) => (e.target.style.backgroundColor = '#80A1D4')}  // Hover effect
               onMouseLeave={(e) => (e.target.style.backgroundColor = '#e0e7ff')} // Hover effect
@@ -287,114 +280,39 @@ const Speaking = () => {
             </button>
           </div>
           <img
+          className="sp_pic"
             src={selected.image}
             alt={selected.title}
-            style={{ height: '350px', marginLeft: '200px' }}
+            
           />
         </motion.div>
       </AnimatePresence>
 
       {/* Timeline container */}
-      <div
-        style={{
-          display: 'flex',
-          alignItems: 'center',
-          marginTop: '40px',
-          justifyContent: 'center',
-          position: 'relative',
-          width: '100%',
-        }}
-      >
-        {/* Timeline line */}
-        <div
-          style={{
-            position: 'absolute',
-            height: '4px',
-            backgroundColor: '#3730a3',
-            width: '80%',
-            top: '50%',
-            transform: 'translateY(-50%)',
-            zIndex: 0,
-          }}
-        />
+      
+      <div className="timeline-cont">
+  {/* Timeline line */}
+  <div className="timeline" />
 
-        {/* Arrow at the end of the line */}
-        <div
-          style={{
-            position: 'absolute',
-            right: '9.5%',
-            top: '50%',
-            transform: 'translateY(-50%)',
-            zIndex: 1,
-            width: 0,
-            height: 0,
-            borderTop: '8px solid transparent',
-            borderBottom: '8px solid transparent',
-            borderLeft: '12px solid #3730a3',
-            color: '#C0B9DD',
-            fill: '#C0B9DD',
-          }}
-        />
+  {/* Arrow at the end of the line */}
+  <div className="timeline-arrow" />
 
-        <div
-          style={{
-            display: 'flex',
-            justifyContent: 'space-between',
-            width: '80%', // match the timeline line width
-            zIndex: 2,
-            position: 'relative',
-          }}
-        >
-          {keys.map((key) => (
-            <div
-              key={key}
-              style={{
-                display: 'flex',
-                flexDirection: 'column',
-                alignItems: 'center',
-                minWidth: '200px',
-                
-              }}
-            >
-              <button
-                onClick={() => setSelectedKey(key)} // Change selectedKey on click
-                className="timeline-dot"
-                style={{
-                  width: '24px',
-                  height: '24px',
-                  borderRadius: '50%',
-                  backgroundColor: key === selectedKey ? '#e0e7ff' : '#3730a3',
-                  borderBlockStyle: 'solid',
-                  border: key === selectedKey ? '#e0e7ff' : '1px solid transparent',
-                  cursor: 'pointer',
-                  zIndex: 3,
-                  transition: 'transform 0.2s ease',
-                  position: 'relative',
-                  top: '30px', // keeps it centered 
-                }}
-                title={projectData[key].title}
-              />
-              <div
-                style={{
-                  marginTop: '6px',
-                  fontSize: '10px',
-                  color: '#333',
-                  maxWidth: '80px',
-                  textAlign: 'center',
-                  whiteSpace: 'normal',
-                  wordWrap: 'break-word',
-                  overflowWrap: 'break-word',
-                  marginTop: '30px',
-                  fontFamily: 'Poppins, sans-serif',
-                 
-                }}
-              >
-                {projectData[key].title}
-              </div>
-            </div>
-          ))}
+  <div className="timeline-items">
+    {keys.map((key) => (
+      <div key={key} className="timeline-item">
+        <button
+          onClick={() => setSelectedKey(key)} // Change selectedKey on click
+          className={`timeline-dot ${key === selectedKey ? 'selected' : ''}`}
+          title={projectData[key].title}
+        />
+        <div className="timeline-title">
+          {projectData[key].title}
         </div>
       </div>
+    ))}
+  </div>
+</div>
+
     </div>
   );
 };

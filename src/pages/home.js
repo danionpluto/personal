@@ -1,8 +1,3 @@
-
-import beach from "/Users/danielaramos/Documents/GitHub/personal1/src/pics/me_beach.jpg";
-import nyc from "/Users/danielaramos/Documents/GitHub/personal1/src/pics/nyc.jpg"
-import back from "/Users/danielaramos/Documents/GitHub/personal1/src/pics/background_land.png";
-import headshot from "/Users/danielaramos/Documents/GitHub/personal1/src/pics/headshot.JPG";
 import Typewriter from "typewriter-effect";
 import React from "react";
 const Home = () => {
