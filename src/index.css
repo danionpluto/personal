@@ -377,7 +377,8 @@ h4{
   .subnav {
     width: 90vw;
     min-width: fit-content;
-    height: 12vw;
+    height: 9vh;
+    
     
   }
 }
@@ -681,6 +682,8 @@ h4{
   align-items: center;
   margin-bottom: 50px;
   
+  margin-left: 0px;
+  
 }
 
 .timeline-cont {
@@ -692,6 +695,7 @@ h4{
   width: 100%;
   
   margin-bottom: 40px;
+  margin-left: 0;
 }
 
 .timeline {
@@ -779,20 +783,19 @@ h4{
     flex-direction: column;
     width: 90vw;
     height: fit-content;
-    margin: 2%;
+    margin-left: 5%;
+    
     
   }
 
   .sp {
-    width: 100%; /* Make the container take full width */
-    margin-left: 10vw;
+    width: 90%; /* Make the container take full width */
+    margin-left: 20vw;
     
 
   }
 
   .sp_pic {
-    
-    
     width: 90%;
     height: auto;
     margin: 0 auto;
@@ -811,10 +814,11 @@ h4{
     justify-content: flex-start; /* Align timeline content to the left */
     margin-bottom: 40px;
     margin-bottom: 90px;
+    margin-left: 5%;
   }
   .timeline {
-    width: 20%; /* Shrink the timeline to fit within the screen */
-    margin-right: 180vw;
+    width: 0; /* Shrink the timeline to fit within the screen */
+    
 
   }
 
