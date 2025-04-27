@@ -735,7 +735,7 @@ h4{
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 200px;
+  
 }
 
 .timeline-dot {
@@ -783,23 +783,22 @@ h4{
     flex-direction: column;
     width: 80vw;
     height: fit-content;
-    margin-left: 8%;
+    margin-left: auto;
+  margin-right: auto;
     
     
   }
 
   .sp {
-    width: 80vw; /* Make the container take full width */
-    margin-left: 20vw;
-    
-
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .sp_pic {
-    width: 80vw;
+    width: 70vw;
     height: auto;
-    margin: 0 auto;
-    margin-left: 0;
+    margin-left: auto;
+    margin-right: auto;
     border-radius: 30px;
     display: block;
     max-width: 90vw;
@@ -814,10 +813,13 @@ h4{
     justify-content: flex-start; /* Align timeline content to the left */
     margin-bottom: 40px;
     margin-bottom: 90px;
-    margin-left: 5%;
+    margin-left: auto;
+    margin-right: auto;
   }
   .timeline {
     width: 0; /* Shrink the timeline to fit within the screen */
+    margin-left: auto;
+    margin-right: auto;
     
 
   }
@@ -826,10 +828,14 @@ h4{
     width: 100%; /* Make timeline items fill the screen */
     justify-content: flex-start; /* Align items to the left */
     padding: 0 9%; 
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .timeline-item {
     min-width: 100px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .timeline-dot {
