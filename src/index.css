@@ -5,27 +5,12 @@
 
 body {
   margin: 0;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
- 
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  font-family: 'Merriweather', serif;
-  
-  justify-content: center;
-  align-items: center;
-  font-family: "Times New Roman", Times, serif;
-  font-size: 30px;
-  /* background-color: #fff8f8; */
-  background-color: #524956;
-  background-color: #21182e;
-  background-color: #f8efef;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
   background-color: #F7F4EA;
-
-  min-width: 1500px;   /* Set your minimum width */
-  min-height: 600px;  /* Optional: set minimum height */
-  overflow-x: auto;
+  overflow-x: hidden; /* prevent horizontal scroll */
 }
+
 
 .home-txt{
   margin: 50px;
@@ -279,16 +264,16 @@ h4{
   
   }
   .blurb-abt{
-  
     
     font-family: Georgia, Times, "Times New Roman", serif, light;
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
     font-size: 15px;
     
+    
   }
   .aboutTitle{
-    margin-bottom: 80px;
+    margin-bottom: 20vh;
   }
   .pics{
     width: 90vw;
@@ -391,7 +376,9 @@ h4{
 @media screen and (max-width: 600px) {
   .subnav {
     width: 90vw;
+    min-width: fit-content;
     height: 12vw;
+    
   }
 }
 .proj{
@@ -573,7 +560,6 @@ h4{
   }
   .subproj{
     width: 90vw;
-    margin-right: 185vw;
    
   }
   .presentation{
@@ -599,7 +585,7 @@ h4{
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
     width: 80%;
-    height: 520px;
+    height: fit-content;
     margin-bottom: 20px;
     background-color: #f6f5f3;
     background-color: #F7F4EA;
@@ -613,7 +599,7 @@ h4{
     font-family: Georgia, Times, "Times New Roman", serif, light;
     font-family: 'Poppins', sans-serif;
     font-weight: lighter;
-    font-size: 15px;
+    font-size: 2vh;
     
   }
   
@@ -624,7 +610,6 @@ h4{
     border-style: solid;
     border-color: #f6f5f3;
     border-radius: 30px;
-    margin-right: 20px;
     width: 80vw;
     height: auto;
   
@@ -800,14 +785,21 @@ h4{
 
   .sp {
     width: 100%; /* Make the container take full width */
+    margin-left: 10vw;
+    
 
   }
 
   .sp_pic {
-  margin-left: 0;
-  width: 80vw;
-  height: auto;
-  margin-right: 20vw;
+    
+    
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    margin-left: 0;
+    border-radius: 30px;
+    display: block;
+    max-width: 100%;
   }
 
   .sp_blurb {
@@ -847,6 +839,9 @@ h4{
     margin-top: 8px; 
     text-align: center; 
     
+  }
+  .timeline-arrow {
+    border-left: 12px solid transparent;
   }
 }
 
