@@ -228,15 +228,19 @@ h4{
   width: 60%;
   margin-right: 80px;
   background-color: #f4e3a5; 
-  margin-top: 30px;
+  
   border-radius: 30px;
   height: fit-content;
 
+}
+.aboutTitle{
+  margin-bottom: 10vh;
 }
 
 .blurb-abt{
   
   margin: 30px;
+  margin-top: auto;
   font-family: Georgia, Times, "Times New Roman", serif, light;
   font-family: 'Poppins', sans-serif;
   font-weight: lighter;
@@ -296,12 +300,15 @@ h4{
 
 .home {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   
 }
 
 .home-title {
-  margin: 50px; 
+  color: #F7F4EA;
+  margin-bottom: 60px;
+  
 }
 
 .pics {
@@ -335,13 +342,12 @@ h4{
   }
 
   .home-title {
-    font-size: 24px;
+    font-size: 44px;
     
   }
 
   .typewriter-text {
-    font-size: 12px;
-    overflow-x: hidden;
+    font-size: 6px;
   }
   .homepage {
     overflow-x: hidden;
@@ -467,12 +473,13 @@ h4{
   margin-top: 50px;
   margin-bottom: 50px;
   margin-left: calc(0.1 * 180px);
-  
+  height: 60vh;
   border-color: #f6f5f3;
   border-radius: 30px;
   margin-right: 50px;
 
 }
+
 
 .projects {
   display: flex;

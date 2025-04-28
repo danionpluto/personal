@@ -1,5 +1,5 @@
 import logo from './logo.svg';
-import React from "react";
+import React, { useState, useEffect } from "react";
 import './App.css';
 import {BrowserRouter as Router, Routes, Route, Link} from "react-router-dom";
 import Home from './pages/home';
@@ -36,7 +36,17 @@ function Navbar () {
       <NavLink 
         to="/contact" 
         className={({ isActive }) => isActive ? "link-styles active" : "link-styles"}
-      >Contact</NavLink>
+      >Contact
+      </NavLink>
+
+      <a
+        href="/DanielaRamosOjedaResume.pdf" // Replace with your resume's actual path
+        download="DaniRamosOjedaResume.pdf" // Optional: The file name you want users to see
+        className="link-styles"
+        style={{ marginLeft: '0px' }} // Adjust the margin as needed
+      >
+        Resume
+      </a>
     </nav>
   );
 }

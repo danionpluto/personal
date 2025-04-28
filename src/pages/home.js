@@ -6,24 +6,25 @@ const Home = () => {
 
         <div className="homepage" >
             <div className="home">
+
             
             
             <div className="home-text">
-            <h1 className = "home-title">Software Engineer.</h1>
-            <h1 style={{ fontFamily: 'monospace', fontSize: '24px', color:'black' }}>
+                <h1 className = "home-title">Software Engineer.</h1>
+            <h1 className="typewriter-text"style={{ fontFamily: 'monospace', fontSize: '24px', color:'black', fontWeight:'100' }}>
         < Typewriter
                 onInit={(typewriter) => {
                     typewriter
-                    .typeString('Hi! My name is Dani :)')
+                    .typeString('Hi! My name is Dani <3')
                     .pauseFor(1000)
                     .deleteChars(22)
-                    .typeString('Hola! Me llamo Dani :)')
+                    .typeString('Hola! Me llamo Dani <3')
                     .pauseFor(1000)
                     .deleteChars(22)
-                    .typeString('Piyali! Na notokah Dani :)')
+                    .typeString('Piyali! Na notokah Dani <3')
                     .pauseFor(1000)
                     .deleteChars(26)
-                    .typeString('Hi! My name is Dani :)')
+                    .typeString('Click About Me to Learn More!')
                     .pauseFor(1000)
                     .start();
                 }}
@@ -31,14 +32,10 @@ const Home = () => {
             </h1>
 
             </div> 
-           
+
             </div>
             
-           
-            
-
-            
-            
+               
         </div>
     );
 };
