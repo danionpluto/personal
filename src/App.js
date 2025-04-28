@@ -21,7 +21,7 @@ function Navbar () {
       <NavLink 
         to="/about" 
         className={({ isActive }) => isActive ? "link-styles active" : "link-styles"}
-      >About</NavLink>
+      >About Me</NavLink>
 
       <NavLink 
         to="/projects" 
