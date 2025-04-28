@@ -31,7 +31,7 @@ function Navbar () {
       <NavLink 
         to="/speaking" 
         className={({ isActive }) => isActive ? "link-styles active" : "link-styles"}
-      >Speaking</NavLink>
+      >Talks</NavLink>
 
       <NavLink 
         to="/contact" 
