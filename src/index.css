@@ -379,6 +379,12 @@ h4{
   border: 1rem;
   font-family: 'Inter', sans-serif;
 }
+.take{
+  font-family: 'Inter', sans-serif;
+  font-weight: 200;
+  
+}
+
 @media screen and (max-width: 600px) {
   .subnav {
     width: 90vw;
@@ -703,6 +709,12 @@ h4{
   
   margin-bottom: 40px;
   margin-left: 0;
+}
+.take-talk{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  
 }
 
 .timeline {

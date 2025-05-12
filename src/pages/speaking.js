@@ -209,21 +209,24 @@ const Speaking = () => {
       date: "April 2023",
       image: aiisp,
       blurb: "At this symposium co-hosted by the Redistributive Computing Group and the American Indian and Indigenous studies program at Cornell, I presented my work regarding how Natural Language Processing and Technology overall can and has been applied to Indigenous languages. I covered the long discussed idea of Indigenous Protocols and the ways in which technological development should uphold the pillars of sovereignty that have kept our people and land alive since time immemorial.",
-      link: "https://rc.infosci.cornell.edu/2023/04/23/indigenous-computing/"
+      link: "https://rc.infosci.cornell.edu/2023/04/23/indigenous-computing/",
+      takeaways: "This symposium gave me access to so many other brilliant minds doing work to protect their communities and promote data sovereignty. Among the topics discussed were the importance of soveriegnty of biological data, and the practice of computing in relation to traditional teachings."
     },
     neurips: {
       title: "NeurIPS",
       date: "December 2024",
       image: neurips,
       blurb: "At the NeurIPS 2025 conference, I had the honor of presenting about the state of Indigenous Language AI, particularly along the dimension of automatic speech recognition and data sovereignty.",
-      link: "https://neurips.cc/virtual/2024/affinity-event/105016"
+      link: "https://neurips.cc/virtual/2024/affinity-event/105016",
+      takeaways: "This talk gave me so much experience preparing and speaking confidently to a room full of peers who were experts in their fields."
     },
     rising: {
       title: "Rising Voices",
       date: "March 2025",
       image: flair,
       blurb: "At the 2025 annual Digital Activism Summit held by Rising Voices, I gave a talk to around 50 language activists from Mexico and Central America regarding the state of AI in Indigenous Languages.",
-      link: "https://rising.globalvoices.org/cumbre2025/"
+      link: "https://rising.globalvoices.org/cumbre2025/",
+      takeaways: "This event opened up my world to so many new experts in the field of language revitalization. I got to hear about their hopes and restraints regarding Artificial Intelligence and engage in conversations about the differences between the United States and Mexico regarding Indigenous rights and sovereignty."
     }
   };
 
@@ -243,7 +246,7 @@ const Speaking = () => {
           exit={{ opacity: 0, y: -30 }} // Exit with a fade and slide up
           transition={{ duration: 0.8 }} // Duration of the transition
         >
-          <div className="sp" style={{ padding: '50px', fontSize: '16px', width: '600px' }}>
+          <div className="sp" style={{ padding: '20px', fontSize: '12px', width: '600px' }}>
             <h2
               className="speaking2title"
               style={{
@@ -259,6 +262,11 @@ const Speaking = () => {
               <strong>{selected.date}</strong>
             </p>
             <p className='sp_blurb 'style={{fontFamily:'Poppins, sans-serif'}}>{selected.blurb}</p>
+            <h2 className="take-talk">
+                  What they taught me:</h2>
+                <p className='sp_blurb 'style={{fontFamily:'Poppins, sans-serif'}}>{selected.takeaways}</p>
+                <br />
+                <br />
             <button
               onClick={() => window.open(selected.link, "_blank")}
               style={{
